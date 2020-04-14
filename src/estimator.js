@@ -5,9 +5,9 @@ function currentlyInfectedCalculator(cases, estimate) {
 function infectionsByRequestedTimeCalculator(currentlyInfected, durationType, timeToElapse) {
 
     if (durationType === 'weeks') {
-        timeToElapse * 7;
+        timeToElapse *= 7;
     } else if (durationType === 'months') {
-        timeToElapse * 30;
+        timeToElapse *= 30;
     }
 
     const threeDaySets = timeToElapse / 3;
